@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tg_bot_seller"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiogram = "^2.19"
+gino = "^1.0.1"
+environs = "^9.5.0"
+
+[tool.poetry.scripts]
+start = "tg_bot_seller.app:run_bot"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
